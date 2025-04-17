@@ -32,5 +32,6 @@ export const navbar_data={
         icon:  <FaFacebook />
     } 
     ],
-    title: "Inquire"
+    title: "Inquire",
+    
 }
