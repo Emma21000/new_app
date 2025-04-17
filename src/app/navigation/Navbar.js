@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navbar({data}) {
   return (
-    <div className="w-full h-36 bg-[#F1ECEA] py-10 px-28 flex items-center justify-between relative">
+    <div className=" w-full  bg-[#F1ECEA] py-10 px-28 flex items-center justify-between fixed left-0 top-0">
     <div className="flex gap-10">
         {data.links.map((elem,index)=>(
             <Link key={index} className="flex text-4xl font-thin text-[#724024]" href={elem.path} >{elem.title} {data.botton}</Link>
