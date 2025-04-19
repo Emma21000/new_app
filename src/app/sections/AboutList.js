@@ -12,7 +12,7 @@ export default function AboutList({data}) {
                 alt={elem.img}
                 width={elem.width}
                 height={elem.height}
-                className="w-[800px] h-[800px]" />
+                className="w-[800px] h-[800px] object-cover" />
             ))}
         </div>
         <div className="flex items-start justify-evenly py-18">
@@ -29,7 +29,6 @@ export default function AboutList({data}) {
             <div className="flex flex-col my-6 gap-y-6">
                 <Link className="bg-[#3e2b24] py-4 px-12 text-4xl text-[#b18673] border-2 border-transparent hover:bg-[#b18673] hover:border-[#3e2b24] hover:text-[#3e2b24] duration-150 transition-all" href='#'>{data.link.title}</Link>
                 <Link className="bg-[#b18673] py-4 px-12 text-4xl text-[#3e2b24] border-2 border-[#3e2b24] hover:bg-[#3e2b24] hover:border-transparent hover:text-[#b18673]  duration-150 transition-all" href='#'>{data.link.but}</Link>
-
             </div>
         </div>
     </div>
